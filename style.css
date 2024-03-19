@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, nav {
+    background-color: yellow; /* Light green background */
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: black; /* White lettering */
+    text-decoration: none;
+}
+
+#about-me img {
+    width: 200px; /* Adjust as necessary */
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+#contact-info a {
+    color: blue; /* Change as needed */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: yellow; /* Makes links in the footer yellow */
+}
+
+#about-me h2, #contact-info h2 {
+    border-bottom: 2px solid yellow; /* Adds a yellow underline to the headings */
+}
