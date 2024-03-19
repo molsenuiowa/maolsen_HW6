@@ -52,3 +52,52 @@ footer a {
 #about-me h2, #contact-info h2 {
     border-bottom: 2px solid yellow; /* Adds a yellow underline to the headings */
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Zebra striping for table rows */
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.family-photo-crop {
+    width: 20px; /* Set the width as needed */
+    height: 10px; /* Set the height as needed */
+    background-size: cover; /* Ensure the image covers the full area */
+    background-position: center; /* Center the image within the container */
+    margin: auto; /* Center the container on the page */
+    display: block; /* Ensure the div behaves as a block-level element */
+}
+
+/* Yellow underline for headers */
+#family-photo h2,
+#hobbies-passions h2,
+#skillsets h2 {
+    border-bottom: 2px solid yellow; /* Adjust the color and thickness as needed */
+    display: inline-block; /* This makes the underline only as wide as the text */
+}
+
+/* Footer styling */
+footer {
+    background-color: black; /* Black background */
+    padding: 10px; /* Add some padding */
+}
+
+footer p {
+    color: yellow; /* Yellow text */
+    margin: 0; /* Remove default margin */
+}
