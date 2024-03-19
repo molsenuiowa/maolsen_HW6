@@ -74,13 +74,20 @@ tbody tr:nth-child(odd) {
     background-color: #f9f9f9;
 }
 
-.family-photo-crop {
-    width: 20px; /* Set the width as needed */
-    height: 10px; /* Set the height as needed */
-    background-size: cover; /* Ensure the image covers the full area */
-    background-position: center; /* Center the image within the container */
-    margin: auto; /* Center the container on the page */
-    display: block; /* Ensure the div behaves as a block-level element */
+.image-crop {
+    width: 400px; /* Width of the crop area */
+    height: 400px; /* Height of the crop area, make equal to width for a square */
+    overflow: hidden; /* Hides the parts of the image that are outside the container */
+    display: flex; /* Utilizes Flexbox to center the image */
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    margin: auto; /* Center the cropping container if it's the only element in a block */
+}
+
+.image-crop img {
+    min-width: 100%; /* Ensures the image covers the width of the container */
+    min-height: 100%; /* Ensures the image covers the height of the container */
+    object-fit: cover; /* Ensures the image covers the crop area, can be adjusted */
 }
 
 /* Yellow underline for headers */
@@ -101,3 +108,5 @@ footer p {
     color: yellow; /* Yellow text */
     margin: 0; /* Remove default margin */
 }
+
+
